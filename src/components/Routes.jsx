@@ -11,7 +11,7 @@ import HelpItem from "./HelpItem";
 import Home from "./Home";
 import NotFound from "./NotFound";
 import Terms from "./Terms";
-
+import NewProfile from './NewProfile';
 @withRouter
 @observer
 class Routes extends React.Component {
@@ -30,6 +30,7 @@ class Routes extends React.Component {
         <Route exact path="/help" title="Signature Encryption: Help" component={ Help } />
         <Route path="/help/:helpId" title="Signature Encryption: Help" component={ HelpItem } />
         <Route exact path="/" title="Signature Encryption" component={ Home } />
+        <Route component={NewProfile} />
         <Route component={ NotFound } />
       </Switch>
     )
