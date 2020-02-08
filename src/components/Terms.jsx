@@ -12,7 +12,7 @@ import Menu from "./Menu";
 class Terms extends React.Component {
   render() {
     return (
-      <DocumentTitle title="CDP Portal: Terms of Service">
+      <DocumentTitle title="Signature Encryption Portal: Terms of Service">
         <div className="full-width-page">
           <div className="wrapper">
             <Menu page="terms" />

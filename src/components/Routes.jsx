@@ -27,10 +27,9 @@ class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/help" title="CDP Portal: Help" component={ Help } />
-        <Route path="/help/:helpId" title="CDP Portal: Help" component={ HelpItem } />
-        <Route exact path="/terms" title="CDP Portal: Terms of Service" render={() => <Terms />} />
-        <Route exact path="/" title="CDP Portal" component={ Home } />
+        <Route exact path="/help" title="Signature Encryption: Help" component={ Help } />
+        <Route path="/help/:helpId" title="Signature Encryption: Help" component={ HelpItem } />
+        <Route exact path="/" title="Signature Encryption" component={ Home } />
         <Route component={ NotFound } />
       </Switch>
     )
