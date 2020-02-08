@@ -41,7 +41,7 @@ class WalletClientSelector extends React.Component {
           }
           <a href="#action" onClick={ e => { e.preventDefault(); this.props.network.showHW("trezor") } }>
             <div className="provider-icon">{ walletIcons["trezor"] }</div>
-            Create a new Profile
+           <span>Create a new Profile  </span> 
           </a>
           <a href="#action" onClick={ e => { e.preventDefault(); this.props.network.startWalletLink() } }>
             <div className="provider-icon">{ walletIcons["walletlink"] }</div>

@@ -1,7 +1,6 @@
 // Libraries
 import React from "react";
 import {inject, observer} from "mobx-react";
-import Markdown from "markdown-to-jsx";
 import DocumentTitle from "react-document-title";
 
 // Components
@@ -17,7 +16,6 @@ class Terms extends React.Component {
           <div className="wrapper">
             <Menu page="terms" />
             <main className="main-column fullwidth markdown">
-              <Markdown children={ this.props.content.getTerms() } />
             </main>
           </div>
         </div>

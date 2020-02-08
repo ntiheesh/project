@@ -152,7 +152,6 @@ class Home extends React.Component {
                         <React.Fragment>
                           <Link to="/terms" target="_blank">Terms of Service</Link>
                           <br/>
-                          <a href="https://makerdao.com/en/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
                         </React.Fragment>
                     }
                   </div>

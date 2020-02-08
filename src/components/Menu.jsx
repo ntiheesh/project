@@ -5,7 +5,7 @@ import {inject, observer} from "mobx-react";
 
 // Images
 import iconHome from 'images/icon-home.svg';
-import iconHelp from 'images/icon-help.svg';
+
 
 @inject("system")
 @inject("network")
