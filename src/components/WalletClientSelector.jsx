@@ -1,11 +1,11 @@
 // Libraries
 import React from "react";
 import {inject, observer} from "mobx-react";
-
+import NewProfile from './NewProfile';
 // Utils
 import {getWebClientProviderName} from "../utils/blockchain";
 import walletIcons from "./WalletIcons";
-
+import {Link} from "react-router-dom";
 @inject("network")
 @observer
 class WalletClientSelector extends React.Component {
@@ -39,7 +39,15 @@ class WalletClientSelector extends React.Component {
             Verify a Digital Signature
           </a>
           }
-          <a href="#action" onClick={ e => { e.preventDefault(); this.props.network.showHW("trezor") } }>
+          <a href="#action" onClick={()=>{
+              const name=window.prompt("Enter UserName");
+              const password=window.prompt(`Hello ${name} !Enter Password`);
+          }}>
+          <div className="provider-icon">{ walletIcons["trezor"] }</div>
+            Open Profile
+          </a>
+        
+          <a href="#action" onClick={ e => { e.preventDefault(); this.props.network.showHW("open-account") } }>
             <div className="provider-icon">{ walletIcons["trezor"] }</div>
            <span>Create a new Profile  </span> 
           </a>

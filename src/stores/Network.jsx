@@ -168,7 +168,7 @@ export default class NetworkStore {
 
   // Hardwallets
   showHW = option => {
-    if (option === "ledger") {
+   if (option === "ledger") {
       option = `ledger-${localStorage.getItem("loadLedgerLegacy") === "true" ? "legacy" : "live"}`;
 
     }

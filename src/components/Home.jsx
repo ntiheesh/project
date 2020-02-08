@@ -150,7 +150,6 @@ class Home extends React.Component {
                     {
                       !this.props.network.loadingAddress &&
                         <React.Fragment>
-                          <Link to="/terms" target="_blank">Terms of Service</Link>
                           <br/>
                         </React.Fragment>
                     }
