@@ -14,7 +14,7 @@ class WalletClientSelector extends React.Component {
     return (
       <div className="frame no-account">
         <div className="heading">
-          <h2>Welcome</h2>
+          <h2>Signature Encryption</h2>
         </div>
         <section className="content">
           <div className="helper-text no-wrap">Menu</div>
